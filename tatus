@@ -1,0 +1,27 @@
+[34m7ed21b8 [31m (HEAD -> master) [37mtest: ensure SignUpController return 400 if no passwordConfirmation is provided - [36mMichel Lima, [37m5 minutes ago
+[34m2b5111b [31m [37mfeat: ensure SignUpController return 400 if no passwordConfirmation is provided - [36mMichel Lima, [37m5 minutes ago
+[34md252b1c [31m [37mtest: ensure SignUpController return 400 if no password is provided - [36mMichel Lima, [37m6 minutes ago
+[34m26f4ec0 [31m [37mfeat: ensure SignUpController return 400 if no password is provided - [36mMichel Lima, [37m6 minutes ago
+[34mf0dd5b2 [31m [37mrefactor: simplify code - [36mMichel Lima, [37m8 minutes ago
+[34m31759c1 [31m [37mrefactor: move duplicated code to a helper method - [36mMichel Lima, [37m10 minutes ago
+[34m577cab5 [31m [37mtest: add customized error for missing param - [36mMichel Lima, [37m16 minutes ago
+[34mef5471a [31m [37mrefactor: add customized error for missing param - [36mMichel Lima, [37m16 minutes ago
+[34m23b2c38 [31m [37mchore: disable jest coverage - [36mMichel Lima, [37m17 minutes ago
+[34m4fd0dd2 [31m [37mrefactor: ensure SignUpController.handle implement correct interfaces - [36mMichel Lima, [37m27 minutes ago
+[34m399f33b [31m [37mtest: ensure SignUpController return an error if no email is provided - [36mMichel Lima, [37m36 minutes ago
+[34mea4e10b [31m [37mfeat: ensure SignUpController return an error if no email is provided - [36mMichel Lima, [37m36 minutes ago
+[34me3280ca [31m [37mchore: add off rule @typescript-eslint/strict-boolean-expressions - [36mMichel Lima, [37m37 minutes ago
+[34ma478163 [31m [37mtest: ensure SignUpController return an error if no name is provided - [36mMichel Lima, [37m40 minutes ago
+[34mebc3d58 [31m [37mfeat: ensure SignUpController return an error if no name is provided - [36mMichel Lima, [37m41 minutes ago
+[34mc80e5a7 [31m [37mchore: add --watch in package.json test - [36mMichel Lima, [37m42 minutes ago
+[34m1721e2a [31m [37mtest: ensure signupcontroller returns 400 if no name is provided - [36mMichel Lima, [37m46 minutes ago
+[34m5940123 [31m [37mchore: add --passWithNoTests in package.json - [36mMichel Lima, [37m47 minutes ago
+[34m872881f [31m [37mfeat: ensure signupcontroller returns 400 if no name is provided - [36mMichel Lima, [37m49 minutes ago
+[34m2489afe [31m [37mchore: add coverage in gitignore - [36mMichel Lima, [37m50 minutes ago
+[34ma6ad547 [31m [37mchore: add jest to lint-staged - [36mMichel Lima, [37m2 hours ago
+[34mc3a7be6 [31m [37mchore: add jest - [36mMichel Lima, [37m2 hours ago
+[34m91cf7e3 [31m [37mchore: add lint-staged - [36mMichel Lima, [37m3 hours ago
+[34mba77f2d [31m [37mchore: add eslint - [36mMichel Lima, [37m3 hours ago
+[34mf9094f7 [31m [37mchore: add typescript] - [36mMichel Lima, [37m3 hours ago
+[34mf017278 [31m [37mchore: add commit linter - [36mMichel Lima, [37m3 hours ago
+[34m65c8b90 [31m [37mchore: add npm - [36mMichel Lima, [37m3 hours ago
