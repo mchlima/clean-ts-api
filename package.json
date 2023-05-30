@@ -33,5 +33,11 @@
   "dependencies": {
     "@types/validator": "^13.7.17",
     "validator": "^13.9.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test:ci"
+    }
   }
 }
