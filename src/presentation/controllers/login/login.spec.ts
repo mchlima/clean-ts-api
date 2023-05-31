@@ -1,7 +1,7 @@
-import { type HttpResponse } from '../signup-protocols'
+import { type HttpResponse } from '../signup/signup-protocols'
 import { LoginController } from './login'
-import { badRequest } from '../../../helpers/http-helper'
-import { MissingParamError } from '../../../errors'
+import { badRequest } from '../../helpers/http-helper'
+import { MissingParamError } from '../../errors'
 
 interface SutTypes {
   sut: LoginController
