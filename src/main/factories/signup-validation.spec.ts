@@ -1,4 +1,4 @@
-import { RequiredFieldsValidation } from '../../presentation/helpers/validators/required-fields-validation.ts'
+import { RequiredFieldsValidation } from '../../presentation/helpers/validators/required-fields-validation'
 import { ValidationComposite } from '../../presentation/helpers/validators/validation-composite'
 import { makeSignUpValidation } from './signup-validation'
 import { type Validation } from '../../presentation/helpers/validators/validation'
