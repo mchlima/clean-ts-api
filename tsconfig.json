@@ -1,9 +1,22 @@
 {
-    "compilerOptions": {
-        "outDir": "./dist",
-        "module": "commonjs",
-        "target": "ES2022",
-        "esModuleInterop": true,
-        "allowJs": true
-    }
+  "display": "Node LTS",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "module": "commonjs",
+    "target": "ES2022",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node"
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts"
+  ]
 }
