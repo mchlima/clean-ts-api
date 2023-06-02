@@ -8,8 +8,8 @@
     "target": "ES2022",
     "esModuleInterop": true,
     "allowJs": true,
-    // "skipLibCheck": true,
-    // "moduleResolution": "node",
-    // "forceConsistentCasingInFileNames": true
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true
   }
 }
