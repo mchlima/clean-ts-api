@@ -1,7 +1,7 @@
 import { SignUpController } from './signup'
 import { type HttpRequest, type AccountModel, type AddAccount, type AddAccountModel, type Validation } from './signup-protocols'
 import { MissingParamError, ServerError } from '../../errors'
-import { ok, serverError, badRequest } from '../../helpers/http-helper'
+import { ok, serverError, badRequest } from '../../helpers/http/http-helper'
 
 const makeFakeAccount = (): AccountModel => ({
   id: 'valid_id',

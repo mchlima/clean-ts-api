@@ -8,15 +8,8 @@
     "target": "ES2022",
     "esModuleInterop": true,
     "allowJs": true,
-    "skipLibCheck": true,
-    "moduleResolution": "node"
-  },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "src/**/*.spec.ts",
-    "src/**/*.test.ts"
-  ]
+    // "skipLibCheck": true,
+    // "moduleResolution": "node",
+    // "forceConsistentCasingInFileNames": true
+  }
 }
