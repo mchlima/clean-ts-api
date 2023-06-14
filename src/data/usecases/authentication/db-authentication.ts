@@ -2,7 +2,7 @@ import { type LoadAccountByEmailRepository } from 'data/protocols/db/load-accoun
 import { type AuthenticationModel, type Authentication } from '../../../domain/usecases/authentication'
 import { type HashComparer } from 'data/protocols/criptography/hash-comparer'
 import { type AccountModel } from '../add-account/db-add-account-protocols'
-import { type TokenGenerator } from 'data/protocols/criptography/token-generator'
+import { type Encrypter } from 'data/protocols/criptography/encrypter'
 import { type UpdateAccessTokenRepository } from 'data/protocols/db/update-access-token-repository'
 
 type NewType = LoadAccountByEmailRepository
@@ -10,18 +10,18 @@ type NewType = LoadAccountByEmailRepository
 export class DbAuthentication implements Authentication {
   private readonly loadAccountByEmailRepository: LoadAccountByEmailRepository
   private readonly hashComparer: HashComparer
-  private readonly tokenGenerator: TokenGenerator
+  private readonly encrypter: Encrypter
   private readonly updateAccessTokenRepository: UpdateAccessTokenRepository
 
   constructor (
     loadAccountByEmailRepository: NewType,
     hashComparer: HashComparer,
-    tokenGenerator: TokenGenerator,
+    encrypter: Encrypter,
     updateAccessTokenRepository: UpdateAccessTokenRepository
   ) {
     this.loadAccountByEmailRepository = loadAccountByEmailRepository
     this.hashComparer = hashComparer
-    this.tokenGenerator = tokenGenerator
+    this.encrypter = encrypter
     this.updateAccessTokenRepository = updateAccessTokenRepository
   }
 
@@ -30,7 +30,7 @@ export class DbAuthentication implements Authentication {
     if (account) {
       const isValid = await this.hashComparer.compare(authentication.password, account.password)
       if (isValid) {
-        const accessToken: string = await this.tokenGenerator.generate(account.id)
+        const accessToken: string = await this.encrypter.encrypt(account.id)
         await this.updateAccessTokenRepository.update(account.id, accessToken)
         return accessToken
       }
